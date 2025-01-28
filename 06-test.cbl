@@ -5,6 +5,6 @@
        WORKING-STORAGE SECTION.
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
-            DISPLAY "Hello world"
+            DISPLAY "Cobol course fácil"
             STOP RUN.
        END PROGRAM YOUR-PROGRAM-NAME.
