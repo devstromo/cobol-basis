@@ -11,6 +11,8 @@
                                  NUMBER-SIGN 36.
              SYMBOLIC CHARACTERS COMMA-SIGN IS 45
                                  HYPHEN-SIGN 46.
+             SYMBOLIC CHARACTERS PERIOD-SIGN SLASH-SIGN
+                               ARE   46        47.
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
