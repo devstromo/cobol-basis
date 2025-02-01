@@ -2,7 +2,7 @@
        PROGRAM-ID. MY-FIRST-PROGRAM.
        ENVIRONMENT DIVISION.
        CONFIGURATION SECTION.
-          SPECIAL-NAMES.
+           SPECIAL-NAMES.
              DECIMAL-POINT IS COMMA.
              SYMBOLIC CHARACTERS ESPACIO IS 33.
              SYMBOLIC CHARACTERS LEFT-ANGLE IS 175.
@@ -13,6 +13,11 @@
                                  HYPHEN-SIGN 46.
              SYMBOLIC CHARACTERS PERIOD-SIGN SLASH-SIGN
                                ARE   46        47.
+       INPUT-OUTPUT SECTION.
+           FILE-CONTROL.
+               SELECT OPTIONAL EMPLOYEE-FILE
+               ASSIGN TO "employee.dat"
+               ORGANIZATION IS SEQUENTIAL.
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
