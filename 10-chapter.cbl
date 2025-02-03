@@ -1,4 +1,22 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. CHAPTER-10.
+
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+       SPECIAL-NAMES.
+       DECIMAL-POINT IS COMMA.
+
+       DATA DIVISION.
+       FILE SECTION.
+       WORKING-STORAGE SECTION.
+           01 Numb1 PIC 999 VALUE 15.
+           01 Numb2 PIC 999 VALUE 50.
+           01 GreetingText PIC XXXX VALUE "Hi".
+
        PROCEDURE DIVISION.
-            DISPLAY "This program only print this message.".
+       ShowData.
+          DISPLAY Numb1.
+          DISPLAY Numb2.
+          DISPLAY GreetingText.
+       STOP RUN.
+       END PROGRAM CHAPTER-10.
