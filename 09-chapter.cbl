@@ -5,6 +5,6 @@
        WORKING-STORAGE SECTION.
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
-            DISPLAY "Hello world"
+            DISPLAY "Codification sheets"
             STOP RUN.
        END PROGRAM CHAPTER-9.
