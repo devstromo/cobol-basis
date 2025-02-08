@@ -1,4 +1,5 @@
        IDENTIFICATION DIVISION.
+      * Comment character is place in the 7th column
        PROGRAM-ID. CHAPTER-9.
        DATA DIVISION.
        FILE SECTION.
