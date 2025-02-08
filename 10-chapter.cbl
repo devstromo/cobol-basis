@@ -11,6 +11,7 @@
        WORKING-STORAGE SECTION.
            01 Numb1 PIC 999 VALUE 15.
            01 Numb2 PIC 999 VALUE 50.
+           01 SumResult  PIC 999 VALUE 000.
            01 GreetingText PIC XXXX VALUE "Hi".
 
        PROCEDURE DIVISION.
@@ -18,5 +19,8 @@
           DISPLAY Numb1.
           DISPLAY Numb2.
           DISPLAY GreetingText.
+       CalculateSum.
+          ADD Numb1 Numb2 GIVING SumResult.
+          DISPLAY "Sum: " SumResult.
        STOP RUN.
        END PROGRAM CHAPTER-10.
