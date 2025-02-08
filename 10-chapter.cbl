@@ -19,6 +19,7 @@
           DISPLAY Numb1.
           DISPLAY Numb2.
           DISPLAY GreetingText.
+      *> This PARAGRAPH calculate the Numb1 and Numb2 sum
        CalculateSum.
           ADD Numb1 Numb2 GIVING SumResult.
           DISPLAY "Sum: " SumResult.
