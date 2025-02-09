@@ -19,5 +19,7 @@
        CalculateSum.
           ADD Numb1 Numb2 GIVING SumResult.
           DISPLAY "Sum: " SumResult.
+       DisplayResults.
+          DISPLAY Numb3.
        STOP RUN.
        END PROGRAM CHAPTER-10.
