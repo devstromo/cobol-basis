@@ -1,5 +1,5 @@
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. CHAPTER-10.
+       PROGRAM-ID. CHAPTER-11.
 
        ENVIRONMENT DIVISION.
        CONFIGURATION SECTION.
@@ -9,10 +9,11 @@
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
-           01 Numb1 PIC 999 VALUE 15.
-           01 Numb2 PIC 999 VALUE 50.
-           01 SumResult  PIC 999 VALUE 000.
+           01 Numb1 PIC 99 VALUE 15.
+           01 Numb2 PIC 99 VALUE 50.
+           01 SumResult  PIC 99 VALUE 000.
            01 Numb3 PIC 9(29) VALUE "This should be a number".
+           01 ResultValue PIC 99 VALUE 0.
 
        PROCEDURE DIVISION.
       *> This PARAGRAPH calculate the Numb1 and Numb2 sum
@@ -21,5 +22,7 @@
           DISPLAY "Sum: " SumResult.
        DisplayResults.
           DISPLAY Numb3.
+          COMPUTE ResultValue = Numb1 + Numb3.
+          DISPLAY ResultValue.
        STOP RUN.
-       END PROGRAM CHAPTER-10.
+       END PROGRAM CHAPTER-11.
