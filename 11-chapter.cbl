@@ -14,6 +14,7 @@
            01 SumResult  PIC 99 VALUE 000.
            01 Numb3 PIC 9(29) VALUE "This should be a number".
            01 ResultValue PIC 99 VALUE 0.
+           01 HUNDRED-CONST CONSTANT AS 100.
 
        PROCEDURE DIVISION.
       *> This PARAGRAPH calculate the Numb1 and Numb2 sum
@@ -22,7 +23,8 @@
           DISPLAY "Sum: " SumResult.
        DisplayResults.
           DISPLAY Numb3.
-          COMPUTE ResultValue = Numb1 + Numb3.
-          DISPLAY ResultValue.
+      *>     COMPUTE ResultValue = Numb1 + Numb3.
+      *>     DISPLAY ResultValue.
+          DISPLAY HUNDRED-CONST.
        STOP RUN.
        END PROGRAM CHAPTER-11.
