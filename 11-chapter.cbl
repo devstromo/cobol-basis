@@ -12,6 +12,7 @@
            01 Numb1 PIC 999 VALUE 15.
            01 Numb2 PIC 999 VALUE 50.
            01 SumResult  PIC 999 VALUE 000.
+           01 Numb3 PIC 9(29) VALUE "This should be a number".
 
        PROCEDURE DIVISION.
       *> This PARAGRAPH calculate the Numb1 and Numb2 sum
