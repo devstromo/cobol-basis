@@ -3,8 +3,10 @@
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
+           01 WebSite PIC X(25) VALUE "www.example.com".
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
-            DISPLAY "Hello world"
+       ShowWebsite.
+            DISPLAY WebSite
             STOP RUN.
        END PROGRAM CHAPTER-12.
