@@ -1,17 +1,11 @@
-      ******************************************************************
-      * Author:
-      * Date:
-      * Purpose:
-      * Tectonics: cobc
-      ******************************************************************
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. YOUR-PROGRAM-NAME.
+       PROGRAM-ID. CHAPTER-13.
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
+           01 NumberValue PIC 99 VALUE 1.
        PROCEDURE DIVISION.
-       MAIN-PROCEDURE.
-            DISPLAY "Hello world"
+       SHOW-VALUE.
+            DISPLAY NumberValue
             STOP RUN.
-       END PROGRAM YOUR-PROGRAM-NAME.
-
+       END PROGRAM CHAPTER-13.
