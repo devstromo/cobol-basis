@@ -8,6 +8,7 @@
            01 DecimalNumberValue2 PIC 999V999 VALUE 100.405.
            01 NegativeNumberValue PIC S99 VALUE -81.
            01 NegativeDecimalNumberValue PIC S99V99 VALUE -81.45.
+           01 LongNumberValue PIC 9(15) VALUE 12232333.
        PROCEDURE DIVISION.
        SHOW-VALUE.
             DISPLAY NumberValue
@@ -15,5 +16,6 @@
             DISPLAY DecimalNumberValue2
             DISPLAY NegativeNumberValue
             DISPLAY NegativeDecimalNumberValue
+            DISPLAY LongNumberValue
             STOP RUN.
        END PROGRAM CHAPTER-13.
