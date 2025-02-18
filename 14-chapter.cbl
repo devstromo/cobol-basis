@@ -9,7 +9,7 @@
           01 Result PIC 99 VALUE ZERO.
        PROCEDURE DIVISION.
           CalculateAndShow.
-             COMPUTE Result = Numb1.
+             COMPUTE Result = Numb1 + Numb2.
        MAIN-PROCEDURE.
             DISPLAY Result
             STOP RUN.
