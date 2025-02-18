@@ -10,7 +10,6 @@
        PROCEDURE DIVISION.
           CalculateAndShow.
              COMPUTE Result = Numb1 + Numb2.
-       MAIN-PROCEDURE.
-            DISPLAY Result
+             DISPLAY "The Result is " Result ".".
             STOP RUN.
        END PROGRAM CHAPTER-14.
