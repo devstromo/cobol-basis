@@ -9,10 +9,10 @@
        WORKING-STORAGE SECTION.
            01 Numb1 PIC 99 VALUE 10.
            01 Numb2 PIC 99 VALUE 3.
-           01 ResultValue PIC 9V99 VALUE ZERO.
+           01 ResultValue PIC 99 VALUE ZERO.
        PROCEDURE DIVISION.
        SHOW-RESULT.
-            COMPUTE ResultValue = Numb1/Numb2.
+            ADD Numb1 TO Numb2 GIVING ResultValue.
             DISPLAY ResultValue.
             STOP RUN.
        END PROGRAM CHAPTER-16.
