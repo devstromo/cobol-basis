@@ -45,5 +45,10 @@
             DISPLAY "Divide section".
             DIVIDE Numb1 BY Numb2 GIVING ResultValue.
             DISPLAY ResultValue.
+            DIVIDE Numb1 BY Numb2 GIVING Numb3, Numb4.
+            DISPLAY Numb1.
+            DISPLAY Numb2.
+            DISPLAY Numb3.
+            DISPLAY Numb4.
             STOP RUN.
        END PROGRAM CHAPTER-16.
