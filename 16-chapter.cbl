@@ -37,5 +37,9 @@
       *>       MULTIPLY
             MULTIPLY Numb1 BY Numb2 GIVING ResultValue.
             DISPLAY ResultValue.
+            MULTIPLY Numb1 BY Numb2, Numb3.
+            DISPLAY Numb1.
+            DISPLAY Numb3.
+            DISPLAY Numb2.
             STOP RUN.
        END PROGRAM CHAPTER-16.
