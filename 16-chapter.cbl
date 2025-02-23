@@ -37,9 +37,13 @@
       *>       MULTIPLY
             MULTIPLY Numb1 BY Numb2 GIVING ResultValue.
             DISPLAY ResultValue.
-            MULTIPLY Numb1 BY Numb2, Numb3.
+            MULTIPLY Numb1 BY Numb4, Numb3.
             DISPLAY Numb1.
             DISPLAY Numb3.
-            DISPLAY Numb2.
+            DISPLAY Numb4.
+      *>       DIVIDE
+            DISPLAY "Divide section".
+            DIVIDE Numb1 BY Numb2 GIVING ResultValue.
+            DISPLAY ResultValue.
             STOP RUN.
        END PROGRAM CHAPTER-16.
