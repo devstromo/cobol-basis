@@ -28,5 +28,10 @@
             DISPLAY Numb6.
             SUBTRACT Numb1 FROM Numb2 GIVING ResultValue.
             DISPLAY ResultValue.
+            SUBTRACT Numb3 FROM Numb4, Numb5, Numb6.
+            DISPLAY Numb3.
+            DISPLAY Numb4.
+            DISPLAY Numb5.
+            DISPLAY Numb6.
             STOP RUN.
        END PROGRAM CHAPTER-16.
