@@ -17,8 +17,8 @@
            01 ResultOperValue PIC S9999V99 VALUE ZEROES.
        PROCEDURE DIVISION.
        SHOW-RESULT.
+      *>     ADD
             ADD Numb1 TO Numb2 GIVING ResultValue.
-
             DISPLAY ResultValue.
             ADD Numb3 TO Numb4, Numb5, Numb6.
             DISPLAY ResultValue.
@@ -26,6 +26,7 @@
             DISPLAY Numb4.
             DISPLAY Numb5.
             DISPLAY Numb6.
+      *>       SUBTRACT
             SUBTRACT Numb1 FROM Numb2 GIVING ResultValue.
             DISPLAY ResultValue.
             SUBTRACT Numb3 FROM Numb4, Numb5, Numb6.
@@ -33,5 +34,8 @@
             DISPLAY Numb4.
             DISPLAY Numb5.
             DISPLAY Numb6.
+      *>       MULTIPLY
+            MULTIPLY Numb1 BY Numb2 GIVING ResultValue.
+            DISPLAY ResultValue.
             STOP RUN.
        END PROGRAM CHAPTER-16.
