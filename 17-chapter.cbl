@@ -14,5 +14,11 @@
               DISPLAY "Input your name:"
               ACCEPT NameValue.
               DISPLAY "Name: ", NameValue.
+              DISPLAY "Input your lastame:"
+              ACCEPT LastnameValue.
+              DISPLAY "Lastname: ", LastnameValue.
+              DISPLAY "Input your age:"
+              ACCEPT Age.
+              DISPLAY "Age: ", Age.
             STOP RUN.
        END PROGRAM CHAPTER-17.
