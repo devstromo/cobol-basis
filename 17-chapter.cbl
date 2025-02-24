@@ -13,6 +13,6 @@
            REQUEST-DATA.
               DISPLAY "Input your name:"
               ACCEPT NameValue.
-              DISPLAY NameValue.
+              DISPLAY "Name: ", NameValue.
             STOP RUN.
        END PROGRAM CHAPTER-17.
