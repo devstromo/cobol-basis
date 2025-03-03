@@ -25,5 +25,10 @@
            DISPLAY NumberValue.
            MOVE 200 TO NumberValue.
            DISPLAY NumberValue.
+
+           MOVE "100" TO NumberValue.
+           DISPLAY NumberValue.
+           ADD 100 TO NumberValue.
+           DISPLAY NumberValue.
             STOP RUN.
        END PROGRAM CHAPTER-18.
