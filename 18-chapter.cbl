@@ -9,6 +9,7 @@
            01 Age PIC X(3) VALUE SPACES.
            01 NumberValue PIC 9(16) VALUE ZEROS.
            01 RestulValue PIC 9(16) VALUE ZEROS.
+           01 SmallValue1 PIC 9(5) VALUE ZERO.
        PROCEDURE DIVISION.
 
        WorkWithValues.
@@ -30,5 +31,8 @@
            DISPLAY NumberValue.
            ADD 100 TO NumberValue.
            DISPLAY NumberValue.
+
+           MOVE "102035" TO SmallValue1
+           DISPLAY SmallValue1.
             STOP RUN.
        END PROGRAM CHAPTER-18.
