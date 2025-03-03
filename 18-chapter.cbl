@@ -12,13 +12,18 @@
        PROCEDURE DIVISION.
 
        WorkWithValues.
-           DISPLAY FirstName.
-           MOVE "Jorge" to FirstName.
-           DISPLAY FirstName.
-           MOVE 100 to FirstName.
-           DISPLAY FirstName.
+      *>      DISPLAY FirstName.
+      *>      MOVE "Jorge" to FirstName.
+      *>      DISPLAY FirstName.
+      *>      MOVE 100 to FirstName.
+      *>      DISPLAY FirstName.
+      *>      DISPLAY NumberValue.
+      *>      MOVE "Gorge" to NumberValue.
+      *>      DISPLAY NumberValue.
            DISPLAY NumberValue.
-           MOVE "Gorge" to NumberValue.
+           MOVE 100 TO NumberValue.
+           DISPLAY NumberValue.
+           MOVE 200 TO NumberValue.
            DISPLAY NumberValue.
             STOP RUN.
        END PROGRAM CHAPTER-18.
