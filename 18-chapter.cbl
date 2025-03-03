@@ -10,7 +10,10 @@
            01 NumberValue PIC 9(16) VALUE ZEROS.
            01 RestulValue PIC 9(16) VALUE ZEROS.
        PROCEDURE DIVISION.
-       MAIN-PROCEDURE.
-            DISPLAY "Hello world"
+
+       WorkWithValues.
+           DISPLAY FirstName.
+           MOVE "Jorge" to FirstName.
+           DISPLAY FirstName.
             STOP RUN.
        END PROGRAM CHAPTER-18.
