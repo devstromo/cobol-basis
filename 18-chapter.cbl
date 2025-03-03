@@ -15,5 +15,7 @@
            DISPLAY FirstName.
            MOVE "Jorge" to FirstName.
            DISPLAY FirstName.
+           MOVE 100 to FirstName.
+           DISPLAY FirstName.
             STOP RUN.
        END PROGRAM CHAPTER-18.
