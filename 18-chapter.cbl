@@ -32,7 +32,13 @@
            ADD 100 TO NumberValue.
            DISPLAY NumberValue.
 
-           MOVE "102035" TO SmallValue1
+           MOVE "102035" TO SmallValue1.
            DISPLAY SmallValue1.
+
+           MOVE ZEROS TO SmallValue1.
+           DISPLAY SmallValue1.
+
+           MOVE SPACES TO FirstName.
+           DISPLAY FirstName.
             STOP RUN.
        END PROGRAM CHAPTER-18.
