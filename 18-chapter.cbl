@@ -10,6 +10,7 @@
            01 NumberValue PIC 9(16) VALUE ZEROS.
            01 RestulValue PIC 9(16) VALUE ZEROS.
            01 SmallValue1 PIC 9(5) VALUE ZERO.
+           01 Password PIC X(15) VALUE SPACES.
        PROCEDURE DIVISION.
 
        WorkWithValues.
@@ -40,5 +41,8 @@
 
            MOVE SPACES TO FirstName.
            DISPLAY FirstName.
+
+           MOVE ALL "*" TO Password.
+           DISPLAY Password.
             STOP RUN.
        END PROGRAM CHAPTER-18.
