@@ -23,5 +23,8 @@
            IF Number3 LESS OR EQUAL Number1
                DISPLAY "Greater or equals VERBOSE"
            END-IF.
+           IF Number3 IS EQUAL Number1
+               DISPLAY "Greater or equals VERBOSE"
+           END-IF.
            STOP RUN.
        END PROGRAM CHAPTER-20.
