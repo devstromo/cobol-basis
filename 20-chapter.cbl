@@ -3,12 +3,15 @@
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
+       01 Number1 PIC 99 VALUE 10.
+       01 Number2 PIC 99 VALUE 50.
+       01 Number3 PIC 99 VALUE 10.
        PROCEDURE DIVISION.
        Conditionals.
-           IF 10 > 50 THEN
+           IF Number1 > Number2 THEN
                DISPLAY "First if is executed"
            END-IF.
-          IF 10 < 50 THEN
+           IF Number3 < Number2 THEN
                DISPLAY "Second if is executed"
            END-IF.
            STOP RUN.
