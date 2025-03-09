@@ -14,5 +14,8 @@
            IF Number3 < Number2 THEN
                DISPLAY "Second if is executed"
            END-IF.
+           IF Number3 = Number1
+               DISPLAY "Both values are equals"
+           END-IF.
            STOP RUN.
        END PROGRAM CHAPTER-20.
