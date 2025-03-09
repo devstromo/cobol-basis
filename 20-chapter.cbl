@@ -20,5 +20,8 @@
            IF Number3 >= Number1
                DISPLAY "Greater or equals"
            END-IF.
+           IF Number3 LESS OR EQUAL Number1
+               DISPLAY "Greater or equals VERBOSE"
+           END-IF.
            STOP RUN.
        END PROGRAM CHAPTER-20.
