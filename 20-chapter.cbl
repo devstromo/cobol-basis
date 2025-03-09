@@ -17,5 +17,8 @@
            IF Number3 = Number1
                DISPLAY "Both values are equals"
            END-IF.
+           IF Number3 >= Number1
+               DISPLAY "Greater or equals"
+           END-IF.
            STOP RUN.
        END PROGRAM CHAPTER-20.
