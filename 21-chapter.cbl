@@ -3,7 +3,7 @@
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
-           01 ValueVar PIC 9 VALUE 7.
+           01 ValueVar PIC X VALUE "7".
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
             IF ValueVar IS NUMERIC THEN
