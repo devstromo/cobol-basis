@@ -6,12 +6,14 @@
            CLASS A-G IS "A" THRU "G".
            CLASS A-G-LOWER IS "a" THRU "g".
            CLASS A-G-RANGE IS "A" THRU "G", "a" THRU "g".
+           CLASS MULTI-RANGE IS "A" THRU "G", "a" THRU "g","7" THRU "9".
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
            01 ValueVar PIC X VALUE "C".
-           01 StingRangeVar PIC XXXX VALUE "ABCD".
-           01 StingRangeVarUpperLower PIC XXXX VALUE "ABcD".
+           01 StringRangeVar PIC XXXX VALUE "ABCD".
+           01 StringRangeVarUpperLower PIC XXXX VALUE "ABcD".
+           01 MultiString PIC XXXX VALUE "ABc8".
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
             IF ValueVar IS NUMERIC THEN
@@ -35,12 +37,15 @@
             IF ValueVar IS A-G OR ValueVar A-G-LOWER THEN
                DISPLAY "A-G Class If executed"
             END-IF.
-             IF StingRangeVar IS A-G OR StingRangeVar A-G-LOWER THEN
+             IF StringRangeVar IS A-G OR StringRangeVar A-G-LOWER THEN
                DISPLAY "A-G Class If executed for StingRangeVar"
             END-IF.
-            IF StingRangeVarUpperLower IS A-G-RANGE THEN
+            IF StRingRangeVarUpperLower IS A-G-RANGE THEN
                DISPLAY "A-G Class If executed for "
                   "StingRangeVarUpperLower"
+            END-IF.
+            IF MultiString IS MULTI-RANGE THEN
+               DISPLAY "MULTI-RANGE Class If executed for MultiString"
             END-IF.
             STOP RUN.
        END PROGRAM CHAPTER-21.
