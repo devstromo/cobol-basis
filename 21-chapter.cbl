@@ -7,6 +7,7 @@
            CLASS A-G-LOWER IS "a" THRU "g".
            CLASS A-G-RANGE IS "A" THRU "G", "a" THRU "g".
            CLASS MULTI-RANGE IS "A" THRU "G", "a" THRU "g","7" THRU "9".
+           CLASS IS-BLANK IS SPACE.
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
@@ -14,6 +15,7 @@
            01 StringRangeVar PIC XXXX VALUE "ABCD".
            01 StringRangeVarUpperLower PIC XXXX VALUE "ABcD".
            01 MultiString PIC XXXX VALUE "ABc8".
+           01 StringSpace PIC X VALUE SPACE.
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
             IF ValueVar IS NUMERIC THEN
@@ -46,6 +48,9 @@
             END-IF.
             IF MultiString IS MULTI-RANGE THEN
                DISPLAY "MULTI-RANGE Class If executed for MultiString"
+            END-IF
+            IF StringSpace IS IS-BLANK THEN
+               DISPLAY "IS-BLANK Class If executed for StringSpace"
             END-IF.
             STOP RUN.
        END PROGRAM CHAPTER-21.
