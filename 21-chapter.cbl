@@ -1,9 +1,13 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. CHAPTER-21.
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+       SPECIAL-NAMES.
+           CLASS A-G IS "A" THRU "G".
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
-           01 ValueVar PIC AA VALUE "A".
+           01 ValueVar PIC X VALUE "C".
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
             IF ValueVar IS NUMERIC THEN
@@ -23,6 +27,9 @@
             END-IF.
             IF ValueVar IS NOT ALPHABETIC-LOWER THEN
                DISPLAY "NOT ALPHABETIC-LOWER If executed"
+            END-IF.
+            IF ValueVar IS A-G THEN
+               DISPLAY "A-G Class If executed"
             END-IF.
             STOP RUN.
        END PROGRAM CHAPTER-21.
