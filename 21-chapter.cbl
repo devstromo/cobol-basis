@@ -5,11 +5,13 @@
        SPECIAL-NAMES.
            CLASS A-G IS "A" THRU "G".
            CLASS A-G-LOWER IS "a" THRU "g".
+           CLASS A-G-RANGE IS "A" THRU "G", "a" THRU "g".
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
            01 ValueVar PIC X VALUE "C".
            01 StingRangeVar PIC XXXX VALUE "ABCD".
+           01 StingRangeVarUpperLower PIC XXXX VALUE "ABcD".
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
             IF ValueVar IS NUMERIC THEN
@@ -35,6 +37,10 @@
             END-IF.
              IF StingRangeVar IS A-G OR StingRangeVar A-G-LOWER THEN
                DISPLAY "A-G Class If executed for StingRangeVar"
+            END-IF.
+            IF StingRangeVarUpperLower IS A-G-RANGE THEN
+               DISPLAY "A-G Class If executed for "
+                  "StingRangeVarUpperLower"
             END-IF.
             STOP RUN.
        END PROGRAM CHAPTER-21.
