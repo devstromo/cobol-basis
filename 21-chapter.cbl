@@ -3,7 +3,7 @@
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
-           01 ValueVar PIC X VALUE "a".
+           01 ValueVar PIC AA VALUE "A".
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
             IF ValueVar IS NUMERIC THEN
@@ -20,6 +20,9 @@
             END-IF.
             IF ValueVar IS NOT ALPHABETIC-UPPER THEN
                DISPLAY "NOT ALPHABETIC-UPPER If executed"
+            END-IF.
+            IF ValueVar IS NOT ALPHABETIC-LOWER THEN
+               DISPLAY "NOT ALPHABETIC-LOWER If executed"
             END-IF.
             STOP RUN.
        END PROGRAM CHAPTER-21.
