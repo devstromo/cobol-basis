@@ -4,6 +4,7 @@
        CONFIGURATION SECTION.
        SPECIAL-NAMES.
            CLASS A-G IS "A" THRU "G".
+           CLASS A-G-LOWER IS "a" THRU "g".
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
@@ -28,7 +29,7 @@
             IF ValueVar IS NOT ALPHABETIC-LOWER THEN
                DISPLAY "NOT ALPHABETIC-LOWER If executed"
             END-IF.
-            IF ValueVar IS A-G THEN
+            IF ValueVar IS A-G OR ValueVar A-G-LOWER THEN
                DISPLAY "A-G Class If executed"
             END-IF.
             STOP RUN.
