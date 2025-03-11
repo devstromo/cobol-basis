@@ -3,8 +3,11 @@
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
+           01 ValueVar PIC 9 VALUE 7.
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
-            DISPLAY "Hello world"
+            IF ValueVar IS NUMERIC THEN
+               DISPLAY "Numeric If executed"
+            END-IF.
             STOP RUN.
        END PROGRAM CHAPTER-21.
