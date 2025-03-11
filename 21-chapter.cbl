@@ -9,6 +9,7 @@
        FILE SECTION.
        WORKING-STORAGE SECTION.
            01 ValueVar PIC X VALUE "C".
+           01 StingRangeVar PIC XXXX VALUE "ABCD".
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
             IF ValueVar IS NUMERIC THEN
@@ -31,6 +32,9 @@
             END-IF.
             IF ValueVar IS A-G OR ValueVar A-G-LOWER THEN
                DISPLAY "A-G Class If executed"
+            END-IF.
+             IF StingRangeVar IS A-G OR StingRangeVar A-G-LOWER THEN
+               DISPLAY "A-G Class If executed for StingRangeVar"
             END-IF.
             STOP RUN.
        END PROGRAM CHAPTER-21.
