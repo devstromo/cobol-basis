@@ -4,6 +4,8 @@
        FILE SECTION.
        WORKING-STORAGE SECTION.
        01 NumberOne PIC S99 VALUE -25.
+       01 GroupVar.
+           02 NameValue PIC X(15) VALUES SPACES.
        PROCEDURE DIVISION.
             STOP RUN.
        END PROGRAM CHAPTER-22.
