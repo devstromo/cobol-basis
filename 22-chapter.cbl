@@ -6,7 +6,9 @@
        01 NumberOne PIC S99 VALUE -25.
        01 GroupVar.
            05 NameValue PIC X(15) VALUES SPACES.
-           05 LastnameValue PIC X(30) VALUES SPACES.
+           05 LastnameGroup.
+              10 FirstLastname PIC X(30) VALUES SPACES.
+              10 SecondLastname PIC X(30) VALUES SPACES.
            05 PhonesValue.
               10 Mobile PIC X(9) VALUES SPACES.
               10 WorkPhone PIC X(9) VALUES SPACES.
