@@ -10,8 +10,13 @@
               10 FirstLastname PIC X(30) VALUES SPACES.
               10 SecondLastname PIC X(30) VALUES SPACES.
            05 PhonesValue.
-              10 Mobile PIC X(9) VALUES SPACES.
-              10 WorkPhone PIC X(9) VALUES SPACES.
+              10 MobileGroup.
+                 15 MobileOne PIC X(9) VALUES SPACES.
+                 15 MobileSecond PIC X(9) VALUES SPACES.
+              10 WorkPhoneGroup.
+                 15 WorkPhoneOne PIC X(9) VALUES SPACES.
+                 15 WorkPhoneSecond PIC X(9) VALUES SPACES.
+       77 NumberTwo PIC S99 VALUE -25.
        PROCEDURE DIVISION.
             STOP RUN.
        END PROGRAM CHAPTER-22.
