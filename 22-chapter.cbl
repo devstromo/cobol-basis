@@ -4,6 +4,7 @@
        FILE SECTION.
        WORKING-STORAGE SECTION.
        01 NumberOne PIC S99 VALUE -25.
+      *>  01 Var can be divided, so use some extra bytes compered to 77
        01 GroupVar.
            05 NameValue PIC X(15) VALUES SPACES.
            05 LastnameGroup.
