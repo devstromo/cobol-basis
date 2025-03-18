@@ -20,5 +20,7 @@
            IF Elder THEN
                DISPLAY "You are an elder. " WITH NO ADVANCING
            END-IF
+
+           DISPLAY "You are " Age " yo"
            STOP RUN.
        END PROGRAM CHAPTER-23.
