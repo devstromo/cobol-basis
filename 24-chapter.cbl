@@ -8,7 +8,7 @@
        PROCEDURE DIVISION.
        LogicalOperators.
             IF NumberOne > 5 AND NumberSecond < 11 THEN
-             DISPLAY "Se cumple la confición"
+             DISPLAY "Se cumple la conficiÃ³n"
             END-IF
             STOP RUN.
        END PROGRAM CHAPTER-24.
