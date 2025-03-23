@@ -13,5 +13,8 @@
             IF NumberOne > 5 OR NumberSecond < 11 THEN
              DISPLAY "Se cumple la confición OR"
             END-IF
+            IF NumberOne IS NOT < 5 THEN
+             DISPLAY "Se cumple la confición IS NOT"
+            END-IF
             STOP RUN.
        END PROGRAM CHAPTER-24.
