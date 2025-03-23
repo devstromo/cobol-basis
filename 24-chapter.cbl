@@ -20,5 +20,10 @@
                 AND NumberSecond < 11 THEN
              DISPLAY "Se cumple la confición MIXED"
             END-IF
+            IF (NumberOne > 9 OR NumberOne < 5) AND
+                (NumberOne NOT = 15 OR > 15 )
+                AND (NumberSecond = 10) THEN
+             DISPLAY "Se cumple la confición MIXED with parentheses"
+            END-IF
             STOP RUN.
        END PROGRAM CHAPTER-24.
