@@ -16,5 +16,9 @@
             IF NumberOne IS NOT < 5 THEN
              DISPLAY "Se cumple la confición IS NOT"
             END-IF
+            IF NumberOne IS NOT > 15 OR NumberOne < 7
+                AND NumberSecond < 11 THEN
+             DISPLAY "Se cumple la confición MIXED"
+            END-IF
             STOP RUN.
        END PROGRAM CHAPTER-24.
