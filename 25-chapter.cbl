@@ -12,5 +12,22 @@
            ELSE
                DISPLAY "ELSE condition execute"
            END-IF.
+
+      *>      IF MAIN
+           IF NumberOne > 10 THEN
+               MOVE 15 TO NumberOne
+               DISPLAY "NumberOne value is 15"
+      *>      SECONDARY IF
+               IF NumberOne = 15 AND NumberTwo < NumberOne THEN
+                    IF NumberOne  < NumberTwo THEN
+                       MOVE NumberTwo TO NumberOne
+                    ELSE
+                        MOVE NumberOne  TO NumberTwo
+                        DISPLAY "Now both numbers are equals"
+                    END-IF
+               END-IF
+           ELSE
+               DISPLAY "ELSE condition execute"
+           END-IF.
             STOP RUN.
        END PROGRAM CHAPTER-25.
