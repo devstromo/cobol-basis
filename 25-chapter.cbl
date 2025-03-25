@@ -25,9 +25,11 @@
                         MOVE NumberOne  TO NumberTwo
                         DISPLAY "Now both numbers are equals"
                     END-IF
+               ELSE
+                   DISPLAY "AND condition ELSE block"
                END-IF
            ELSE
-               DISPLAY "ELSE condition execute"
+               DISPLAY "NumberOne is not greater than 10"
            END-IF.
             STOP RUN.
        END PROGRAM CHAPTER-25.
