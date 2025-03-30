@@ -9,18 +9,14 @@
            88 Elder VALUE 66 THRU 100.
        PROCEDURE DIVISION.
        AGE-CHECKER.
-           DISPLAY "Input your age"
-           ACCEPT AGE.
-           IF Young THEN
+       DISPLAY "Input your age"
+       ACCEPT AGE.
+       EVALUATE AGE
+           WHEN 1 THRU 39
                DISPLAY "You are young" WITH NO ADVANCING
-           END-IF.
-
-           IF Adult THEN
+           WHEN 40 THRU 65
                DISPLAY "You are mature" WITH NO ADVANCING
-           END-IF.
-
-           IF Elder THEN
+           WHEN 66 THRU 100
                DISPLAY "You are a senior" WITH NO ADVANCING
-           END-IF.
-            STOP RUN.
+       STOP RUN.
        END PROGRAM YOUR-PROGRAM-NAME.
