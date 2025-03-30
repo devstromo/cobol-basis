@@ -18,5 +18,8 @@
                DISPLAY "You are mature" WITH NO ADVANCING
            WHEN 66 THRU 100
                DISPLAY "You are a senior" WITH NO ADVANCING
+           WHEN OTHER
+              DISPLAY "Wrong age" WITH NO ADVANCING
+       END-EVALUATE.
        STOP RUN.
        END PROGRAM YOUR-PROGRAM-NAME.
