@@ -1,22 +1,39 @@
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. YOUR-PROGRAM-NAME.
+       PROGRAM-ID. CHAPTER-26.
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
-       77 Age PIC 999 VALUE ZEROS.
+       77 MenuValue PIC 9 VALUE ZERO.
+
        PROCEDURE DIVISION.
-       AGE-CHECKER.
-       DISPLAY "Input your age"
-       ACCEPT AGE.
-       EVALUATE AGE
-           WHEN 1 THRU 39
-               DISPLAY "You are young" WITH NO ADVANCING
-           WHEN 40 THRU 65
-               DISPLAY "You are mature" WITH NO ADVANCING
-           WHEN 66 THRU 100
-               DISPLAY "You are a senior" WITH NO ADVANCING
+       OptionsValue.
+       DISPLAY "Please enter an option number and press ENTER.".
+
+       DISPLAY "1 - Addition".
+       DISPLAY "2 - Substraction".
+       DISPLAY "3 - Multiply".
+       DISPLAY "4 - Division".
+
+       ACCEPT MenuValue.
+
+       Menu.
+       EVALUATE MenuValue
+
+           WHEN 1
+             DISPLAY "You have selected addition."
+
+           WHEN 2
+             DISPLAY "You have selected substraction ."
+
+           WHEN 3
+             DISPLAY "You have selected multiply."
+
+           WHEN 4
+             DISPLAY "You have selected division."
+
            WHEN OTHER
-              DISPLAY "Wrong age" WITH NO ADVANCING
+             DISPLAY "Wrong option."
        END-EVALUATE.
+
        STOP RUN.
-       END PROGRAM YOUR-PROGRAM-NAME.
+       END PROGRAM CHAPTER-26.
