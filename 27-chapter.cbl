@@ -7,6 +7,11 @@
            88 Young VALUE 1 THRU 39.
            88 Adult VALUE 40 THRU 65.
            88 Elder VALUE 66 THRU 100.
+
+       01 Ranges PIC 99 VALUE ZEROS.
+           88 RangeOne VALUE 1 THRU 10.
+           88 RangeTwo VALUE 11 THRU 20.
+           88 RangeThree VALUE 21 THRU 30.
        77 NumberOne PIC 9(5) VALUE 16.
        77 NumberTwo PIC 9(5) VALUE 10.
        77 NumberThree PIC 9(5) VALUE 20.
@@ -24,13 +29,14 @@
            END-EVALUATE.
            DISPLAY "".
        EvaluateValues.
-
+       DISPLAY "Input a number:"
+       ACCEPT Ranges.
        EVALUATE TRUE
-           WHEN NumberOne = 16
+           WHEN NumberOne = 16 AND RangeOne
             DISPLAY "Block 1"
-           WHEN NumberTwo = 10
+           WHEN NumberTwo = 10 AND RangeTwo
             DISPLAY "Block 2 "
-           WHEN NumberThree >= 15
+           WHEN NumberThree >= 15 AND RangeTwo
             DISPLAY "Block 3 "
            WHEN OTHER
             DISPLAY "Value not found"
