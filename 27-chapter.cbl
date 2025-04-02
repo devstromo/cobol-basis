@@ -11,5 +11,12 @@
         CheckYourAge.
            DISPLAY "Input your age:"
            ACCEPT Age.
+           EVALUATE TRUE
+            WHEN Young
+            DISPLAY "You're young. " WITH NO ADVANCING
+            WHEN Adult
+            DISPLAY "You're an adult. " WITH NO ADVANCING
+            WHEN Elder
+            DISPLAY "You're an elder. " WITH NO ADVANCING
             STOP RUN.
        END PROGRAM CHAPTER-27.
