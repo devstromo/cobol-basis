@@ -21,5 +21,11 @@
                ON SIZE ERROR
                DISPLAY "Number too big"
             END-ADD
+            DISPLAY ResultValue
+            SUBTRACT NumberOne FROM NumberTwo GIVING ResultValue
+               ON SIZE ERROR
+               DISPLAY "Number too big"
+            END-SUBTRACT.
+            DISPLAY ResultValue
             STOP RUN.
        END PROGRAM CHAPTER-28.
