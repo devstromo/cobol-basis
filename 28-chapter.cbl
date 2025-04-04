@@ -10,9 +10,11 @@
        PROCEDURE DIVISION.
        CALCULATION-PROCEDURE.
             COMPUTE ResultValue = NumberOne * NumberTwo
-              ON SIZE ERROR COMPUTE ResultValueTooBig =
-              NumberOne * NumberTwo
+              ON SIZE ERROR
+              COMPUTE ResultValueTooBig = NumberOne * NumberTwo
               DISPLAY ResultValueTooBig
+              MOVE 200 TO ResultValue
             END-COMPUTE.
+            DISPLAY ResultValue
             STOP RUN.
        END PROGRAM CHAPTER-28.
