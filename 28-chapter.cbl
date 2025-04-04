@@ -24,8 +24,10 @@
             DISPLAY ResultValue
             SUBTRACT NumberOne FROM NumberTwo GIVING ResultValue
                ON SIZE ERROR
-               DISPLAY "Number too big"
+                DISPLAY "Number too big"
+               NOT ON SIZE ERROR
+                DISPLAY ResultValue
             END-SUBTRACT.
-            DISPLAY ResultValue
+
             STOP RUN.
        END PROGRAM CHAPTER-28.
