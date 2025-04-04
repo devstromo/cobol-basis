@@ -8,7 +8,9 @@
        77 ResultValue PIC 999 VALUE ZEROS.
        PROCEDURE DIVISION.
        CALCULATION-PROCEDURE.
-            COMPUTE ResultValue =  NumberOne * NumberTwo.
+            COMPUTE ResultValue =  NumberOne * NumberTwo
+              ON SIZE ERROR DISPLAY "Number Overflow"
+            END-COMPUTE.
             DISPLAY ResultValue.
             STOP RUN.
        END PROGRAM CHAPTER-28.
