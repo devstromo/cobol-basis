@@ -4,7 +4,7 @@
        FILE SECTION.
        WORKING-STORAGE SECTION.
        77 NumberOne PIC 999 VALUE 200.
-       77 NumberTwo PIC 999 VALUE 100.
+       77 NumberTwo PIC 999 VALUE 800.
        77 ResultValue PIC 999 VALUE ZEROS.
        77 ResultValueTooBig PIC 99999 VALUE ZEROS.
        PROCEDURE DIVISION.
@@ -16,5 +16,10 @@
               MOVE 200 TO ResultValue
             END-COMPUTE.
             DISPLAY ResultValue
+
+            ADD NumberOne TO NumberTwo GIVING ResultValue
+               ON SIZE ERROR
+               DISPLAY "Number too big"
+            END-ADD
             STOP RUN.
        END PROGRAM CHAPTER-28.
