@@ -10,5 +10,7 @@
        CALCULATION-PROCEDURE.
             COMPUTE ResultValue ROUNDED = NumberOne + NumberTwo.
             DISPLAY ResultValue.
+            ADD NumberOne TO NumberTwo GIVING ResultValue ROUNDED.
+            DISPLAY ResultValue.
             STOP RUN.
        END PROGRAM CHAPTER-29.
