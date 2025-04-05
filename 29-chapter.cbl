@@ -8,7 +8,7 @@
        77 ResultValue PIC 99V99 VALUE ZEROS.
        PROCEDURE DIVISION.
        CALCULATION-PROCEDURE.
-            COMPUTE ResultValue = NumberOne + NumberTwo.
+            COMPUTE ResultValue ROUNDED = NumberOne + NumberTwo.
             DISPLAY ResultValue.
             STOP RUN.
        END PROGRAM CHAPTER-29.
