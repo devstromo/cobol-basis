@@ -15,6 +15,10 @@
             DISPLAY ResultValue2.
             DISPLAY ResultValue3.
             COMPUTE ResultValue4 ROUNDED = 10
+
             ON SIZE ERROR DISPLAY "Something went wrong"
+      *>       ON COBOL 85 and prior "NOT ON SIZE..."
+      *>       MUST BE AFTER "ON SIZE..."
+            NOT ON SIZE ERROR DISPLAY "ok"
             STOP RUN.
        END PROGRAM CHAPTER-30.
