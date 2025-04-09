@@ -3,8 +3,12 @@
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
+       77 ResultValue1 PIC 99V99 VALUES ZEROS.
+       77 ResultValue2 PIC 9999 VALUES ZEROS.
+       77 ResultValue3 PIC 99V99 VALUES ZEROS.
        PROCEDURE DIVISION.
        META-LANGUAGE.
-            DISPLAY "Hello world"
+            COMPUTE ResultValue1 ROUNDED, ResultValue2 ROUNDED,
+            ResultValue3 = 9 + 5.8387.
             STOP RUN.
        END PROGRAM CHAPTER-30.
