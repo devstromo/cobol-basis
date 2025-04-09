@@ -10,5 +10,8 @@
        META-LANGUAGE.
             COMPUTE ResultValue1 ROUNDED, ResultValue2 ROUNDED,
             ResultValue3 = 9 + 5.8387.
+            DISPLAY ResultValue1.
+            DISPLAY ResultValue2.
+            DISPLAY ResultValue3.
             STOP RUN.
        END PROGRAM CHAPTER-30.
