@@ -10,5 +10,8 @@
            IF 10 + 5 IS GREATER THAN 25 THEN
             DISPLAY "Hello world"
            END-IF
+           IF Number2 IS GREATER THAN 25 THEN
+            DISPLAY "Hello world"
+           END-IF
             STOP RUN.
        END PROGRAM CHAPTER-31.
