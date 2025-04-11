@@ -7,6 +7,8 @@
        77 Number2 PIC 99 VALUES ZEROS.
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
+           IF 10 + 5 IS GREATER THAN 25 THEN
             DISPLAY "Hello world"
+           END-IF
             STOP RUN.
        END PROGRAM CHAPTER-31.
