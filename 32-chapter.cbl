@@ -14,5 +14,8 @@
             IF Number2 IS NEGATIVE THEN
                 DISPLAY "Number2 is NOT POSITIVE"
             END-IF.
+            IF Number3 IS ZERO THEN
+                DISPLAY "Number3 is ZERO"
+            END-IF.
             STOP RUN.
        END PROGRAM CHAPTER-32.
