@@ -11,7 +11,7 @@
             IF Number1 IS POSITIVE THEN
                 DISPLAY "Number1 is POSITIVE"
             END-IF.
-            IF Number2 IS NOT POSITIVE THEN
+            IF Number2 IS NEGATIVE THEN
                 DISPLAY "Number2 is NOT POSITIVE"
             END-IF.
             STOP RUN.
