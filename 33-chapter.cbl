@@ -5,8 +5,8 @@
        WORKING-STORAGE SECTION.
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
-            IF 10 IS POSITIVE THEN
-                DISPLAY "Is a number"
+            IF 10 IS NUMERIC THEN
+                DISPLAY "It's a number"
             END-IF
             STOP RUN.
        END PROGRAM CHAPTER-33.
