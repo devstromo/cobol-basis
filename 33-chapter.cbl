@@ -1,0 +1,12 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. CHAPTER-33.
+       DATA DIVISION.
+       FILE SECTION.
+       WORKING-STORAGE SECTION.
+       PROCEDURE DIVISION.
+       MAIN-PROCEDURE.
+            IF 10 IS POSITIVE THEN
+                DISPLAY "Is a number"
+            END-IF
+            STOP RUN.
+       END PROGRAM CHAPTER-33.
