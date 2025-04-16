@@ -29,5 +29,10 @@
             ELSE
                 DISPLAY "The value is numeric"
             END-IF
+            IF SaluteValue IS ALPHABETIC THEN
+                DISPLAY "The value is alphabetic"
+            ELSE
+                DISPLAY "The value isn't alphabetic"
+            END-IF
             STOP RUN.
        END PROGRAM CHAPTER-33.
