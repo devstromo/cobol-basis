@@ -36,6 +36,8 @@
                                     IF Sunday THEN
                                        DISPLAY "Are you ready for "
                                        "Monday?"
+                                    ELSE
+                                        DISPLAY "That day doesn't exist"
                                     END-IF
                                 END-IF
                             END-IF
