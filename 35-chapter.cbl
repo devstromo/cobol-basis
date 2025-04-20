@@ -4,6 +4,12 @@
        FILE SECTION.
        WORKING-STORAGE SECTION.
        PROCEDURE DIVISION.
-       MAIN-PROCEDURE.
-            STOP RUN.
+       Paragraph1.
+           DISPLAY "This is the paragraph 1".
+           PERFORM Paragraph3.
+       Paragraph2.
+           DISPLAY "This is the paragraph 2".
+           STOP RUN.
+       Paragraph3.
+           DISPLAY "This is the paragraph 3".
        END PROGRAM CHAPTER-35.
