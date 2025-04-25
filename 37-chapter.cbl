@@ -18,9 +18,9 @@
        INPUT-DATA.
            DISPLAY "Select an option"
            DISPLAY "1 - Add (+)"
-           DISPLAY "2 - Subtract"
-           DISPLAY "3 - Multiply"
-           DISPLAY "4 - Division"
+           DISPLAY "2 - Subtract(-)"
+           DISPLAY "3 - Multiply(*)"
+           DISPLAY "4 - Division(/)"
            DISPLAY "5 - Exit"
            ACCEPT OptionsValues.
 
