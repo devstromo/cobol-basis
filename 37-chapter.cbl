@@ -24,29 +24,50 @@
             DISPLAY "5 - Exit"
             ACCEPT OptionsValues.
 
-
-            Suma.
+            IF AddOp THEN
+               PERFORM Addition
+           ELSE
+               IF SubOp THEN
+                   PERFORM SubtractOp
+               ELSE
+                   IF MultOp THEN
+                       PERFORM MultiplyOp
+                   ELSE
+                       IF DivOp THEN
+                           PERFORM DivideOp
+                       ELSE
+                           IF ExitOp
+                               DISPLAY "Exit..."
+                               STOP RUN
+                           ELSE
+                               DISPLAY "Not valid option, try again"
+                               PERFORM INPUT-DATA
+                       END-IF
+                   END-IF
+               END-IF
+           END-IF.
+            Addition.
                DISPLAY "ADD OPERATION".
                PERFORM RequestNumbers.
                ADD NumberOne TO NumberTwo GIVING ResultValue.
                DISPLAY "ADD result: " ResultValue "."
                PERFORM INPUT-DATA.
 
-           Resta.
+           SubtractOp.
                DISPLAY "SUBTRACT OPERATION".
                PERFORM RequestNumbers.
                SUBTRACT NumberOne FROM NumberTwo GIVING ResultValue.
                DISPLAY "SUBTRACT result: " ResultValue "."
                PERFORM INPUT-DATA.
 
-           Multiplicacion.
+           MultiplyOp.
                DISPLAY "Has elegido Multiplicación".
                PERFORM RequestNumbers.
                MULTIPLY NumberOne BY NumberTwo GIVING ResultValue.
                DISPLAY "MULTIPLY : " ResultValue"."
                PERFORM INPUT-DATA.
 
-           Dividiendo.
+           DivideOp.
                DISPLAY "DIVIDE OPERATION".
                PERFORM RequestNumbers.
                DIVIDE NumberOne BY NumberTwo GIVING ResultValue.
