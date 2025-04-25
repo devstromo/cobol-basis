@@ -16,15 +16,15 @@
        77 ResultValue PIC 9(6) VALUE ZEROS.
        PROCEDURE DIVISION.
        INPUT-DATA.
-            DISPLAY "Select an option"
-            DISPLAY "1 - Add (+)"
-            DISPLAY "2 - Subtract"
-            DISPLAY "3 - Multiply"
-            DISPLAY "4 - Division"
-            DISPLAY "5 - Exit"
-            ACCEPT OptionsValues.
+           DISPLAY "Select an option"
+           DISPLAY "1 - Add (+)"
+           DISPLAY "2 - Subtract"
+           DISPLAY "3 - Multiply"
+           DISPLAY "4 - Division"
+           DISPLAY "5 - Exit"
+           ACCEPT OptionsValues.
 
-            IF AddOp THEN
+           IF AddOp THEN
                PERFORM Addition
            ELSE
                IF SubOp THEN
@@ -46,7 +46,7 @@
                    END-IF
                END-IF
            END-IF.
-            Addition.
+           Addition.
                DISPLAY "ADD OPERATION".
                PERFORM RequestNumbers.
                ADD NumberOne TO NumberTwo GIVING ResultValue.
@@ -79,5 +79,5 @@
                ACCEPT NumberOne.
                DISPLAY "Please, input second number".
                ACCEPT NumberTwo.
-            STOP RUN.
+           STOP RUN.
        END PROGRAM CHAPTER-37.
