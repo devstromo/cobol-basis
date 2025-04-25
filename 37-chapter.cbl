@@ -46,28 +46,6 @@
            PERFORM INPUT-DATA
 
            END-EVALUATE.
-      *>      IF AddOp THEN
-      *>          PERFORM Addition
-      *>      ELSE
-      *>          IF SubOp THEN
-      *>              PERFORM SubtractOp
-      *>          ELSE
-      *>              IF MultOp THEN
-      *>                  PERFORM MultiplyOp
-      *>              ELSE
-      *>                  IF DivOp THEN
-      *>                      PERFORM DivideOp
-      *>                  ELSE
-      *>                      IF ExitOp
-      *>                          DISPLAY "Exit..."
-      *>                          STOP RUN
-      *>                      ELSE
-      *>                          DISPLAY "Not valid option, try again"
-      *>                          PERFORM INPUT-DATA
-      *>                  END-IF
-      *>              END-IF
-      *>          END-IF
-      *>      END-IF.
            Addition.
                DISPLAY "ADD OPERATION".
                PERFORM RequestNumbers.
