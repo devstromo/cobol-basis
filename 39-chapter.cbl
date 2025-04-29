@@ -5,8 +5,9 @@
        WORKING-STORAGE SECTION.
        PROCEDURE DIVISION.
        LOOP-PROCEDURE.
-           PERFORM 5 TIMES
-               DISPLAY "Repeat"
-           END-PERFORM.
+           PERFORM Greeting 5 TIMES.
            STOP RUN.
+           Greeting.
+               DISPLAY "Repeat".
+
        END PROGRAM CHAPTER-39.
