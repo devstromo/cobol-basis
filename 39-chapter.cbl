@@ -5,6 +5,8 @@
        WORKING-STORAGE SECTION.
        PROCEDURE DIVISION.
        LOOP-PROCEDURE.
-            DISPLAY "Hello world"
-            STOP RUN.
+           PERFORM 5 TIMES
+               DISPLAY "Repeat"
+           END-PERFORM.
+           STOP RUN.
        END PROGRAM CHAPTER-39.
