@@ -3,9 +3,9 @@
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
-       77 NumberValue PIC 99 VALUE ZEROS.
+       77 NumberValue PIC 999 VALUE ZEROS.
        77 Multiplier PIC 999 VALUE ZEROS.
-       77 Result PIC 999 VALUE ZEROS.
+       77 Result PIC 99999 VALUE ZEROS.
        77 OutputValue PIC XXXXX VALUES SPACES.
        PROCEDURE DIVISION.
        START-PROCEDURE.
@@ -30,7 +30,7 @@
 
             ShowTable.
             DISPLAY "La tabla del " NumberValue ":" .
-            PERFORM Calculation 10 TIMES.
+            PERFORM Calculation 100 TIMES.
             PERFORM START-PROCEDURE.
 
             Calculation.
