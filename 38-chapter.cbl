@@ -7,7 +7,7 @@
        77  Lastname PIC X(35) VALUE SPACES.
 
        PROCEDURE DIVISION.
-       Saludo.
+       Greeting.
            DISPLAY "Hi".
            PERFORM RequestName THRU RequestLastname.
            DISPLAY "Hi " NameValue " " Lastname.
