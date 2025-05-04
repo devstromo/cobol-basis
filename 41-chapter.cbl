@@ -3,12 +3,38 @@
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
-       77 nuMBERvALUE PIC 99 VALUE ZEROS.
+       77 NumberValue PIC 99 VALUE ZEROS.
        77 Multiplier PIC 999 VALUE ZEROS.
        77 Result PIC 999 VALUE ZEROS.
        77 OutputValue PIC XXXXX VALUES SPACES.
        PROCEDURE DIVISION.
-       MAIN-PROCEDURE.
-            DISPLAY "Hello world"
+       START-PROCEDURE.
+            DISPLAY "Input 'exit' in console to exit"
+            DISPLAY "Pulse ENTER to MULTIPLY"
+            ACCEPT OutputValue.
+            IF OutputValue = "exit"
+                PERFORM ExitOperation
+            ELSE
+                PERFORM RestartProgram.
+                PERFORM InputNumber.
+                PERFORM ShowTable.
+
+            ExitOperation.
             STOP RUN.
+            RestartProgram.
+            MOVE 0 TO Multiplier.
+
+            InputNumber.
+            DISPLAY "Input number".
+            ACCEPT NumberValue.
+
+            ShowTable.
+            DISPLAY "La tabla del " NumberValue ":" .
+            PERFORM Calculation 10 TIMES.
+            PERFORM START-PROCEDURE.
+
+            Calculation.
+            ADD 1 TO Multiplier.
+            COMPUTE Result = NumberValue * Multiplier.
+            DISPLAY NumberValue " * " Multiplier " = " Result.
        END PROGRAM CHAPTER-41.
