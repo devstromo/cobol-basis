@@ -15,9 +15,10 @@
             IF OutputValue = "exit"
                 PERFORM ExitOperation
             ELSE
-                PERFORM RestartProgram.
-                PERFORM InputNumber.
-                PERFORM ShowTable.
+                PERFORM RestartProgram THRU ShowTable.
+      *>           PERFORM RestartProgram.
+      *>           PERFORM InputNumber.
+      *>           PERFORM ShowTable.
 
             ExitOperation.
             STOP RUN.
