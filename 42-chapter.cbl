@@ -25,6 +25,10 @@
             InputNumber.
             DISPLAY "Input number".
             ACCEPT NumberValue.
+            IF NumberValue IS ZEROS THEN
+                DISPLAY "Write a number o valur greater than 0"
+                PERFORM START-PROCEDURE
+            END-IF.
 
             ShowTable.
             DISPLAY "La tabla del " NumberValue ":" .
