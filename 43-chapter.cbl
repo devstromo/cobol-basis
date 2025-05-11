@@ -9,7 +9,7 @@
             DISPLAY "Input number:"
             ACCEPT NumberValue.
             PERFORM SHOW-NUMBER WITH TEST AFTER
-            UNTIL NumberValue = 10.
+            UNTIL NumberValue > 10.
        STOP RUN.
 
        SHOW-NUMBER.
