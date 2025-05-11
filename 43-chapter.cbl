@@ -13,6 +13,6 @@
        STOP RUN.
 
        SHOW-NUMBER.
-       DISPLAY NumberValue.
        ADD 1 TO NumberValue.
+       DISPLAY NumberValue.
        END PROGRAM CHAPTER-43.
