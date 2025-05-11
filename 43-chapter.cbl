@@ -8,7 +8,7 @@
        MAIN-PROCEDURE.
             DISPLAY "Input number:"
             ACCEPT NumberValue.
-            PERFORM SHOW-NUMBER WITH TEST BEFORE
+            PERFORM SHOW-NUMBER WITH TEST AFTER
             UNTIL NumberValue = 10.
        STOP RUN.
 
