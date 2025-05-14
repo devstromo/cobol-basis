@@ -6,7 +6,8 @@
        77 NumberValue PIC 999.
        PROCEDURE DIVISION.
        MAIN-PROCEDURE.
-       PERFORM OPERATION VARYING NumberValue FROM 15 BY 1
+       PERFORM OPERATION
+       VARYING NumberValue FROM 15 BY 1
        UNTIL NumberValue > 25.
             STOP RUN.
        OPERATION.
