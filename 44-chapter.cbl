@@ -1,0 +1,12 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. CHAPTER-44.
+       DATA DIVISION.
+       FILE SECTION.
+       WORKING-STORAGE SECTION.
+       77 NumberValue PIC 999.
+       PROCEDURE DIVISION.
+       MAIN-PROCEDURE.
+            STOP RUN.
+       OPERATION.
+           DISPLAY NumberValue.
+       END PROGRAM CHAPTER-44.
